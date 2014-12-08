@@ -87,7 +87,7 @@ Here is a whole sample program:
 		  import Implicits._
           
 		  //Call the API
-		  val f: Future[JsValue] = Diffbot.call("article", url)
+		  val f: Future[JsValue] = Diffbot("article", url)
 		
 		  //Use the result in some way
 		  import scala.concurrent.ExecutionContext.Implicits.global
